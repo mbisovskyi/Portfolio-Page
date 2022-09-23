@@ -1,0 +1,27 @@
+.homepage-wrap {
+  display: flex;
+}
+
+.left-container {
+  position: absolute;
+  z-index: 0;
+  width: 70vw;
+  height: 90vh;
+  background-color: #d5d5d5;
+  margin-left: 4%;
+  top: 50%;
+  translate: 0 -50%;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  box-shadow: 0 0 40px black;
+}
+
+.right-container {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  width: 26vw;
+  height: 100vh;
+  background-color: #b8b8b8;
+  box-shadow: 0 0 40px black;
+}
