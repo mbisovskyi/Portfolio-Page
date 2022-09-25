@@ -1,0 +1,19 @@
+.navbar-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  color: white;
+  font-size: 30px;
+}
+
+.navbar-item {
+  margin: 2rem;
+  padding-bottom: 0.4rem;
+  transition: border 0.2s, color 0.4s;
+}
+
+.navbar-item:hover {
+  color: #f9a746;
+  border-bottom: 3px solid white;
+  border-radius: 7px;
+}
