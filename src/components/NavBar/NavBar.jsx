@@ -7,10 +7,18 @@ const NavBar = () => {
   return (
     <div className="navbar-wrap">
       <ul className="navbar-list">
-        <li className="navbar-item">Home</li>
-        <li className="navbar-item">About</li>
-        <li className="navbar-item">Projects</li>
-        <li className="navbar-item">Contact</li>
+        <li className="navbar-item" onClick={() => navigate("/")}>
+          Home
+        </li>
+        <li className="navbar-item" onClick={() => navigate("/about")}>
+          About
+        </li>
+        <li className="navbar-item" onClick={() => navigate("/projects")}>
+          Projects
+        </li>
+        <li className="navbar-item" onClick={() => navigate("/contacts")}>
+          Contact
+        </li>
       </ul>
     </div>
   );
