@@ -2,15 +2,35 @@
 import "./HomePage.css";
 //Importing assets
 import person from "../../assets/Headshot-wb.png";
+// Importing hooks
+import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
+  const navigate = useNavigate();
+
   return (
     <div>
-      <div className="person-signature-container">
-        <p className="person-signature-text">Mykola Bisovskyi</p>
-        <p className="person-title-text">Full Stack Software Developer</p>
+      <div className="person-container">
+        <div className="person-name-div">
+          <span onClick={() => navigate("/about")} className="name name-hover">
+            Mykola Bisovskyi
+          </span>
+        </div>
+        <div className="person-title-div">
+          <span
+            onClick={() => navigate("/about")}
+            className="title title-hover"
+          >
+            Full Stack Software Developer
+          </span>
+        </div>
       </div>
-      <img className="person-img" src={person} height="500px" />
+      <img
+        onClick={() => navigate("/about")}
+        className="person-img"
+        src={person}
+        height="500px"
+      />
     </div>
   );
 };

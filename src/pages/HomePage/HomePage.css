@@ -9,9 +9,15 @@
   position: absolute;
   right: 10%;
   top: 35%;
+  transition: box-shadow 0.2s;
 }
 
-.person-signature-container {
+.person-img:hover {
+  cursor: pointer;
+  box-shadow: 0 0 50px black;
+}
+
+.person-container {
   position: absolute;
   width: 500px;
   top: 25%;
@@ -20,14 +26,41 @@
   letter-spacing: 2px;
 }
 
-.person-signature-text {
-  color: white;
-  font-size: 30px;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
+.person-name-div {
+  height: 32px;
 }
 
-.person-title-text {
+.name {
+  color: white;
+  font-size: 30px;
+  transition: color 0.4s, letter-spacing 0.4s, font-size 0.4s;
+}
+
+.name:hover {
+  letter-spacing: 3px;
+}
+
+.name-hover:hover {
+  cursor: pointer;
+  font-size: 33px;
+}
+
+.person-title-div {
+  height: 23px;
+  margin-top: 1rem;
   color: #cea54c;
   font-size: 20px;
+  transition: letter-spacing 0.4s, font-size 0.4s;
+}
+
+.title {
+  color: #cea54c;
+  font: 20px;
+  transition: letter-spacing 0.4s, font-size 0.4s;
+}
+
+.title-hover:hover {
+  letter-spacing: 3px;
+  font-size: 21px;
+  cursor: pointer;
 }
