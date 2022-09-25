@@ -1,5 +1,6 @@
 .navbar-list {
   width: 95%;
+  padding: 1rem;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -9,18 +10,20 @@
 }
 
 .navbar-item {
-  margin: 2rem;
-  padding-bottom: 0.4rem;
-  transition: border 0.2s, color 0.4s;
+  height: 45px;
+  margin: 1rem 2rem;
+  padding-bottom: 1rem;
+  transition: border 0.15s, color 0.4s;
 }
 
 .navbar-item:hover {
-  color: #f9a746;
+  color: #cea54c;
   border-bottom: 3px solid white;
   border-radius: 7px;
 }
 
 .logo-img {
+  margin-top: 1rem;
   margin-left: 50%;
   translate: -50%;
 }
