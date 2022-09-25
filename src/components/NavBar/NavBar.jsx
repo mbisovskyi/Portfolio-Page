@@ -1,4 +1,7 @@
 import "./NavBar.css";
+//Importing assets
+import logo from "../../assets/logo.png";
+// Importing hooks
 import { useNavigate } from "react-router-dom";
 
 const NavBar = () => {
@@ -20,6 +23,7 @@ const NavBar = () => {
           Contact
         </li>
       </ul>
+      <img className="logo-img" src={logo} alt="logo" height="150px" />
     </div>
   );
 };
