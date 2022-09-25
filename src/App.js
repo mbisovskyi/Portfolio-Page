@@ -2,8 +2,6 @@
 import "./App.css";
 //Importing libraries
 import { Route, Routes } from "react-router-dom";
-//Importing assets
-import background from "./assets/desk.jpg";
 //Importing pages
 import HomePage from "./pages/HomePage/HomePage";
 import AboutPage from "./pages/AboutPage/AboutPage";
@@ -15,7 +13,6 @@ import NavBar from "./components/NavBar/NavBar";
 function App() {
   return (
     <div className="App">
-      <img className="background-img" src={background} alt="background" />
       <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />}></Route>

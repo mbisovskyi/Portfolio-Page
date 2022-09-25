@@ -10,16 +10,20 @@
 }
 
 .navbar-item {
-  height: 45px;
+  text-align: center;
+  width: 6%;
+  height: 38px;
+  padding-bottom: 2rem;
   margin: 1rem 2rem;
-  padding-bottom: 1rem;
-  transition: border 0.15s, color 0.4s;
+  transition: border 0.2s, color 0.4s;
 }
 
 .navbar-item:hover {
+  cursor: pointer;
   color: #cea54c;
   border-bottom: 3px solid white;
   border-radius: 7px;
+  font-size: 29px;
 }
 
 .logo-img {
