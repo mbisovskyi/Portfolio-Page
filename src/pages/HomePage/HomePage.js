@@ -5,14 +5,14 @@ import person from "../../assets/Headshot-wb.png";
 // Importing hooks
 import { useNavigate } from "react-router-dom";
 //Importing components
-import JumpUpText from "../../components/NavBar/JumpUpText/JumpUpText";
+import JumpUpText from "../../components/JumpUpText/JumpUpText";
 
 const HomePage = () => {
   const navigate = useNavigate();
   const greeting = "Welcome to my portfolio page!";
 
   return (
-    <div>
+    <div className="home-page-wrap">
       <div className="left-text-container">
         <JumpUpText text={greeting} />
       </div>
@@ -30,13 +30,13 @@ const HomePage = () => {
             Full Stack Software Developer
           </span>
         </div>
+        <img
+          onClick={() => navigate("/about")}
+          className="person-img"
+          src={person}
+          height="500px"
+        />
       </div>
-      <img
-        onClick={() => navigate("/about")}
-        className="person-img"
-        src={person}
-        height="500px"
-      />
     </div>
   );
 };
