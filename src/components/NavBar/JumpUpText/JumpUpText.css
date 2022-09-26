@@ -1,0 +1,21 @@
+.effected-text {
+  width: 41%;
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+.effected-text span {
+  white-space: pre-wrap;
+  color: white;
+  opacity: 0;
+  transition: all 1s ease;
+  transform: translateY(50px);
+  display: inline-block;
+}
+
+span.fade {
+  color: #cea54c;
+  opacity: 1;
+  transform: translateY(0px);
+}

@@ -45,12 +45,18 @@
 .title {
   text-transform: uppercase;
   color: #cea54c;
-  font-size: 22px;
+  font-size: 28px;
   transition: letter-spacing 0.4s, font-size 0.4s;
 }
 
 .title-hover:hover {
   letter-spacing: 2px;
-  font-size: 21px;
+  font-size: 26px;
   cursor: pointer;
+}
+
+.left-text-container {
+  margin: 0 0 5rem;
+  font-size: 30px;
+  color: white;
 }

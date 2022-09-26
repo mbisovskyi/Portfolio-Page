@@ -4,12 +4,18 @@ import "./HomePage.css";
 import person from "../../assets/Headshot-wb.png";
 // Importing hooks
 import { useNavigate } from "react-router-dom";
+//Importing components
+import JumpUpText from "../../components/NavBar/JumpUpText/JumpUpText";
 
 const HomePage = () => {
   const navigate = useNavigate();
+  const greeting = "Welcome to my portfolio page!";
 
   return (
     <div>
+      <div className="left-text-container">
+        <JumpUpText text={greeting} />
+      </div>
       <div className="person-container">
         <div className="person-name-div">
           <span onClick={() => navigate("/about")} className="name name-hover">

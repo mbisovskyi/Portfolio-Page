@@ -1,5 +1,8 @@
 .App {
   min-height: 100vh;
+}
+
+body {
   background-image: url("./assets/desk.jpg");
   background-position: center;
   background-position: fixed;
