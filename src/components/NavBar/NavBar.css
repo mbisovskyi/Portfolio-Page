@@ -15,15 +15,15 @@
   height: 38px;
   padding-bottom: 2rem;
   margin: 1rem 2rem;
-  transition: border 0.2s, color 0.4s;
+  transition: color 1.5s, font-size 0.3s;
 }
 
 .navbar-item:hover {
   cursor: pointer;
   color: #cea54c;
-  border-bottom: 3px solid white;
   border-radius: 7px;
   font-size: 29px;
+  transition: color 0.4s, font-size 0.2s;
 }
 
 .logo-img {

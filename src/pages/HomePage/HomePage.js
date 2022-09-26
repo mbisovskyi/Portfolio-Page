@@ -9,7 +9,7 @@ import JumpUpText from "../../components/JumpUpText/JumpUpText";
 
 const HomePage = () => {
   const navigate = useNavigate();
-  const greeting = "Welcome to my portfolio page!";
+  const greeting = "Welcome to my portfolio web site!";
 
   return (
     <div className="home-page-wrap">
