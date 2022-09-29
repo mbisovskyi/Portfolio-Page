@@ -24,11 +24,13 @@ const AboutMeText = () => {
 
   //RENDER THIS!
   return (
-    <div className="about-me-text-container">
-      <p className="text">{currentText}</p>
+    <div>
       <button className="btn" onClick={handleClick}>
         {currentButtonText}
       </button>
+      <div className="about-me-text-container">
+        <p className="text">{currentText}</p>
+      </div>
     </div>
   );
 };
