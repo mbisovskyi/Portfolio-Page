@@ -1,0 +1,12 @@
+.about-me-text-container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.about-me-text-container p {
+  color: white;
+  font-size: 26px;
+  letter-spacing: 1px;
+}
