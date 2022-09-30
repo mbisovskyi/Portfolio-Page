@@ -6,18 +6,15 @@ import AboutMeVariables from "./AboutMeVariables.js";
 
 const AboutMeText = () => {
   //STATE VARIABLES
-  const [currentText, setCurrentText] = useState(AboutMeVariables.textOne);
   const [currentButtonText, setCurrentButtonText] = useState(
     AboutMeVariables.buttonTextOne
   );
 
   //FUNCTIONS
   function handleClick() {
-    if (currentText === AboutMeVariables.textOne) {
-      setCurrentText(AboutMeVariables.textTwo);
+    if (currentButtonText === AboutMeVariables.buttonTextOne) {
       setCurrentButtonText(AboutMeVariables.buttonTextTwo);
     } else {
-      setCurrentText(AboutMeVariables.textOne);
       setCurrentButtonText(AboutMeVariables.buttonTextOne);
     }
   }
@@ -29,7 +26,13 @@ const AboutMeText = () => {
         {currentButtonText}
       </button>
       <div className="about-me-text-container">
-        <p className="text">{currentText}</p>
+        {AboutMeVariables.textsArray.map((text, index) => {
+          return (
+            <div key={index}>
+              <p className="texts">{text}</p>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
