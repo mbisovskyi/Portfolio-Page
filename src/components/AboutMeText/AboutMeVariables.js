@@ -14,6 +14,27 @@ const textFour =
 const textFive =
   "I wanted to change my life once again and implement my dream during that life-changing process. My dream was to work in the office as a software developer, a developer that helps to change the world. Finally, I'm another step closer to my dream!";
 
+const languageSkills = ["Java Script", "Python", "Java", "SQL", "HTML/CSS"];
+const frameworkSkills = [
+  "React",
+  "Django",
+  "Django Rest Framework",
+  "Java Spring",
+];
+const technologySkills = [
+  "MySQL Workbench",
+  "JSON",
+  "JWT",
+  "Visual Studio Code",
+  "IntelliJ IDEA",
+  "Postman",
+  "Adobe XD",
+  "Adobe Photoshop",
+  "GitHub",
+  "Slack",
+  "YouTube API",
+  "React Google Charts",
+];
 //PREPAIRING FOR EXPORTS
 const textsArray = [textOne, textTwo, textThree, textFour, textFive];
 const buttonTextOne = "Skills";
@@ -21,6 +42,9 @@ const buttonTextTwo = "Info";
 
 const AboutMeVariables = {
   textsArray,
+  languageSkills,
+  frameworkSkills,
+  technologySkills,
   buttonTextOne,
   buttonTextTwo,
 };
