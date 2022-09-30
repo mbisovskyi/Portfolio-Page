@@ -12,12 +12,20 @@ const AboutMeText = () => {
 
   useEffect(() => {
     const modalContainer = document.querySelector(".modal-skills-container");
-    if (modalContainer.style.display === "block") {
-      modalContainer.style.display = "none";
-    } else {
-      modalContainer.style.display = "block";
+
+    function hideSkills() {
+      modalContainer.classList.add("slide-down-modal");
+      setTimeout(() => {
+        modalContainer.classList.remove("slide-down-modal");
+        modalContainer.style.display = "none";
+      }, 500);
     }
-    console.log(modalContainer);
+
+    if (currentButtonText === "Info") {
+      modalContainer.style.display = "block";
+    } else if (currentButtonText !== "Info") {
+      hideSkills();
+    }
   }, [currentButtonText]);
 
   //FUNCTIONS
