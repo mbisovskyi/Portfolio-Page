@@ -9,12 +9,13 @@ import JumpUpText from "../../components/JumpUpText/JumpUpText";
 
 const HomePage = () => {
   const navigate = useNavigate();
+  const textDisplayTicks = 18;
   const greeting = "Welcome to my portfolio web site!";
 
   return (
     <div className="home-page-wrap">
       <div className="left-text-container">
-        <JumpUpText text={greeting} />
+        <JumpUpText text={greeting} ticks={textDisplayTicks} />
       </div>
       <div className="person-container">
         <div className="person-name-div">

@@ -1,7 +1,7 @@
 import "./JumpUpText.css";
 import { useEffect } from "react";
 
-const JumpUpText = ({ text }) => {
+const JumpUpText = ({ text, ticks }) => {
   useEffect(() => {
     effectedText();
   }, []);
@@ -17,7 +17,7 @@ const JumpUpText = ({ text }) => {
     }
 
     let char = 0;
-    let timer = setInterval(onTick, 25);
+    let timer = setInterval(onTick, ticks);
 
     function onTick() {
       const span = text.querySelectorAll("span")[char];
