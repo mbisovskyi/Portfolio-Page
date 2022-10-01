@@ -76,6 +76,8 @@
 .left-text-container p {
   font-size: 26px;
   text-align: center;
+  color: white;
+  letter-spacing: 1px;
   animation: slide-right ease 1.35s;
 }
 
@@ -94,7 +96,6 @@
 .capstone-video-container {
   margin: 1.55rem 0 1.6rem 1.2rem;
   width: 780px;
-
   animation: slide-up ease 1.25s;
   transition: box-shadow 0.4s;
 }
@@ -115,4 +116,14 @@
 .capstone-video-container:hover {
   cursor: pointer;
   box-shadow: 0 0 30px black;
+}
+
+.left-text-container a {
+  color: #cea54c;
+  text-decoration: none;
+  transition: font-size 0.5s;
+}
+
+.left-text-container a:hover {
+  font-size: 23px;
 }

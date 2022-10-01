@@ -26,7 +26,12 @@ const HomePage = () => {
             <img className="capstone-img" src={thumbnail} width="100%" />
           </a>
         </div>
-        <p>Capstone Project</p>
+        <p>
+          Capstone{" "}
+          <a href="https://github.com/mbisovskyi/TFT-FullStack" target="blank">
+            Repository
+          </a>
+        </p>
       </div>
       <div className="person-container">
         <div className="person-name-div">
