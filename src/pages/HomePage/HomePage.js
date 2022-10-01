@@ -7,7 +7,6 @@ import { useNavigate } from "react-router-dom";
 //Importing components
 import JumpUpText from "../../components/JumpUpText/JumpUpText";
 //Importing video assets
-import video from "../../assets/M.Bisovskyi CVP.mp4";
 import thumbnail from "../../assets/capstone-image.png";
 
 const HomePage = () => {
@@ -20,7 +19,12 @@ const HomePage = () => {
       <div className="left-text-container">
         <JumpUpText text={greeting} ticks={textDisplayTicks} />
         <div className="capstone-video-container">
-          <img src={thumbnail} width="100%" />
+          <a
+            href="https://www.youtube.com/watch?v=QLBhWYlISgE&t=86s"
+            target="blank"
+          >
+            <img className="capstone-img" src={thumbnail} width="100%" />
+          </a>
         </div>
         <p>Capstone Project</p>
       </div>

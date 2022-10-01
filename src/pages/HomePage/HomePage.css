@@ -94,8 +94,7 @@
 .capstone-video-container {
   margin: 1.55rem 0 1.6rem 1.2rem;
   width: 780px;
-  border: 6px solid;
-  border-image: linear-gradient(0.9turn, #ad852e, #daba75) 1;
+
   animation: slide-up ease 1.25s;
   transition: box-shadow 0.4s;
 }
@@ -107,6 +106,10 @@
   100% {
     transform: translateY(0);
   }
+}
+.capstone-img {
+  border: 5px solid;
+  border-image: linear-gradient(0.9turn, #ad852e, #daba75) 1;
 }
 
 .capstone-video-container:hover {
