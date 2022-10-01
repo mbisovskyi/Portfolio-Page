@@ -1,5 +1,5 @@
 .home-page-wrap {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .person-img {
@@ -68,7 +68,48 @@
 }
 
 .left-text-container {
-  width: 50%;
-  margin: 1rem -5rem 5rem;
+  width: 41.5%;
+  margin: 1rem 5rem 5rem;
   color: white;
+}
+
+.left-text-container p {
+  font-size: 26px;
+  text-align: center;
+  animation: slide-right ease 1.35s;
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(-40rem);
+  }
+  75% {
+    transform: translateX(-40rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.capstone-video-container {
+  margin: 1.55rem 0 1.6rem 1.2rem;
+  width: 780px;
+  border: 6px solid;
+  border-image: linear-gradient(0.9turn, #ad852e, #daba75) 1;
+  animation: slide-up ease 1.25s;
+  transition: box-shadow 0.4s;
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(50rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.capstone-video-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0 30px black;
 }

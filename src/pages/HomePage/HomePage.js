@@ -6,6 +6,9 @@ import person from "../../assets/Headshot-wb.png";
 import { useNavigate } from "react-router-dom";
 //Importing components
 import JumpUpText from "../../components/JumpUpText/JumpUpText";
+//Importing video assets
+import video from "../../assets/M.Bisovskyi CVP.mp4";
+import thumbnail from "../../assets/capstone-image.png";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -16,6 +19,10 @@ const HomePage = () => {
     <div className="home-page-wrap">
       <div className="left-text-container">
         <JumpUpText text={greeting} ticks={textDisplayTicks} />
+        <div className="capstone-video-container">
+          <img src={thumbnail} width="100%" />
+        </div>
+        <p>Capstone Project</p>
       </div>
       <div className="person-container">
         <div className="person-name-div">
