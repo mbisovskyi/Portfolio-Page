@@ -29,6 +29,7 @@
   text-align: center;
   margin-top: 6rem;
   animation: slide-up 1s;
+  z-index: 2;
 }
 
 .project-container img {
@@ -90,4 +91,23 @@
   100% {
     transform: translateY(60rem);
   }
+}
+
+.my-repos-link {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  translate: -50%;
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0.2rem 1rem;
+  border: 1px solid #cea54c;
+  border-radius: 5px;
+  background: linear-gradient(0.9turn, #3d3d3d, #181818);
+  transition: color 0.3s;
+}
+
+.my-repos-link:hover {
+  color: #cea54c;
 }

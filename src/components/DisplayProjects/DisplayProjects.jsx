@@ -39,6 +39,13 @@ const DisplayProjects = () => {
           alt="Music Library"
           width="50%"
         />
+        <a
+          className="my-repos-link"
+          href="https://github.com/mbisovskyi?tab=repositories"
+          target="blank"
+        >
+          My Repositories
+        </a>
       </div>
       <div className="projects-links-container">
         <a href={projectsData[projectIndex].backendLink} target="blank">
