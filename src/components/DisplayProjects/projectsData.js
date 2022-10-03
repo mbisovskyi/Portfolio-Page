@@ -1,4 +1,6 @@
+//Importing projects images
 import musicLibraryImage from "./assets/music-library.png";
+import youtubeCloneImage from "./assets/youtube-clone.png";
 
 const musicLibrary = {
   name: "Music Library",
@@ -7,8 +9,15 @@ const musicLibrary = {
   image: musicLibraryImage,
 };
 
-const projectsData = {
-  musicLibrary,
+const youtubeClone = {
+  name: "YouTube Clone",
+  backendLink:
+    "https://github.com/mbisovskyi/YouTube-Clone-FullStack/tree/main/backend",
+  frontendLink:
+    "https://github.com/mbisovskyi/YouTube-Clone-FullStack/tree/main/frontend",
+  image: youtubeCloneImage,
 };
+
+const projectsData = [musicLibrary, youtubeClone];
 
 export default projectsData;
