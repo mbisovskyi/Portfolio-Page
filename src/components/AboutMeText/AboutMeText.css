@@ -67,11 +67,11 @@
   bottom: 7.7%;
   overflow: auto;
   z-index: 1;
-  animation: slide-up-modal ease 1s;
+  animation: slide-up-modal ease 0.5s;
 }
 
 .slide-down-modal {
-  animation: slide-down-modal ease 1.2s;
+  animation: slide-down-modal ease 0.5s;
 }
 
 @keyframes slide-up-modal {

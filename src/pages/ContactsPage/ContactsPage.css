@@ -1,0 +1,98 @@
+.contacts-container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+.contacts-container form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 2rem auto;
+}
+
+.contacts-container label {
+  color: #cea54c;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.contacts-container input {
+  margin: 0.2rem 0 1rem;
+  height: 30px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 1rem 0.5rem;
+  outline: none !important;
+}
+
+.contacts-container textarea {
+  padding: 0.5rem;
+  font-size: 16px;
+  resize: none;
+  height: 10rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  outline: none !important;
+}
+
+.contacts-container button {
+  margin: auto;
+  font-size: 20px;
+  width: 22%;
+  padding: 0.2rem 0;
+  background: none;
+  color: white;
+  border-color: white;
+  border-radius: 5px;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.contacts-container button:hover {
+  color: #cea54c;
+  border-color: #cea54c;
+}
+
+.information {
+  color: white;
+  font-size: 20px;
+  line-height: 2rem;
+}
+
+.information span {
+  color: #cea54c;
+}
+
+.socials-container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.socials-container a {
+  margin: 0.5rem;
+  animation: spring-effect ease 0.3s;
+}
+
+@keyframes spring-effect {
+  0% {
+    transform: translateY(0.6rem);
+  }
+  30% {
+    transform: translateY(-0.4rem);
+  }
+  60% {
+    transform: translateY(0.3rem);
+  }
+  80% {
+    transform: translateY(-0.1rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
+
+.message-form {
+  animation: slide-up ease 0.5s;
+}

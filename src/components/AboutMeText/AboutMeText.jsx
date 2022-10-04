@@ -18,7 +18,7 @@ const AboutMeText = () => {
       setTimeout(() => {
         modalContainer.classList.remove("slide-down-modal");
         modalContainer.style.display = "none";
-      }, 500);
+      }, 300);
     }
 
     if (currentButtonText === "Info") {

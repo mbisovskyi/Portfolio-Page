@@ -12,7 +12,7 @@ import thumbnail from "../../assets/capstone-image.png";
 const HomePage = () => {
   const navigate = useNavigate();
   const textDisplayTicks = 18;
-  const greeting = "Welcome to my portfolio web site!";
+  const greeting = "Welcome to my portfolio website!";
 
   return (
     <div className="home-page-wrap">

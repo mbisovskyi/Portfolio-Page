@@ -20,7 +20,7 @@ const NavBar = () => {
           Projects
         </li>
         <li className="navbar-item" onClick={() => navigate("/contacts")}>
-          Contact
+          Contacts
         </li>
       </ul>
       <img className="logo-img" src={logo} alt="logo" height="150px" />
