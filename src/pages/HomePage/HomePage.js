@@ -16,43 +16,56 @@ const HomePage = () => {
 
   return (
     <div className="home-page-wrap">
-      <div className="left-text-container">
+      <div className="greeting-text-container">
         <JumpUpText text={greeting} ticks={textDisplayTicks} />
+      </div>
+      <div className="homepage-content-container">
         <div className="capstone-video-container">
+          <div className="slide-right">
+            <p>
+              <span className="capstone-title">Capstone </span>
+            </p>
+            <a
+              className="text30px-hover"
+              href="https://github.com/mbisovskyi/TFT-FullStack"
+              target="blank"
+            >
+              Repository
+            </a>
+          </div>
           <a
             href="https://www.youtube.com/watch?v=QLBhWYlISgE&t=86s"
             target="blank"
           >
-            <img className="capstone-img" src={thumbnail} width="100%" />
+            <img className="black-hover" src={thumbnail} width="45%" />
           </a>
         </div>
-        <p>
-          Capstone{" "}
-          <a href="https://github.com/mbisovskyi/TFT-FullStack" target="blank">
-            Repository
-          </a>
-        </p>
-      </div>
-      <div className="person-container">
-        <div className="person-name-div">
-          <span onClick={() => navigate("/about")} className="name name-hover">
-            Mykola Bisovskyi
-          </span>
-        </div>
-        <div className="person-title-div">
-          <span
+        <div className="person-container">
+          <div className="slide-left ">
+            <div className="name">
+              <span
+                className="text30px-hover"
+                onClick={() => navigate("/about")}
+              >
+                Mykola Bisovskyi
+              </span>
+            </div>
+            <div className="title">
+              <span
+                className="text30px-hover"
+                onClick={() => navigate("/about")}
+              >
+                Full Stack Software Developer
+              </span>
+            </div>
+          </div>
+          <img
+            className="black-hover slide-up"
             onClick={() => navigate("/about")}
-            className="title title-hover"
-          >
-            Full Stack Software Developer
-          </span>
+            src={person}
+            width="485px"
+          />
         </div>
-        <img
-          onClick={() => navigate("/about")}
-          className="person-img"
-          src={person}
-          height="500px"
-        />
       </div>
     </div>
   );

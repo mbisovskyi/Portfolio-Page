@@ -94,7 +94,7 @@
 }
 
 .my-repos-link {
-  position: fixed;
+  position: absolute;
   bottom: 2rem;
   left: 50%;
   translate: -50%;

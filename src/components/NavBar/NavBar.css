@@ -1,3 +1,8 @@
+.navbar-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
 .navbar-list {
   width: 95%;
   padding: 1rem;
@@ -26,8 +31,9 @@
   transition: color 0.4s, font-size 0.2s;
 }
 
-.logo-img {
-  margin-top: 1rem;
-  margin-left: 50%;
-  translate: -50%;
+.logo-img-container {
+  /* margin-top: 1rem; */
+
+  width: 150px;
+  margin: auto;
 }
