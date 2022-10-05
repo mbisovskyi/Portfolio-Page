@@ -63,7 +63,6 @@ const HomePage = () => {
             className="black-hover slide-up"
             onClick={() => navigate("/about")}
             src={person}
-            width="485px"
           />
         </div>
       </div>

@@ -8,8 +8,11 @@
 
 .homepage-content-container {
   display: flex;
-  justify-content: space-around;
-  font-size: 30px;
+  justify-content: space-between;
+  width: 75vw;
+  margin: auto;
+  margin-top: 6rem;
+  font-size: 1.9rem;
   text-align: center;
   line-height: 3rem;
 }
@@ -34,6 +37,15 @@
 
 .capstone-title {
   color: #cea54c;
+}
+
+.person-container {
+  width: 25.5%;
+}
+
+.person-container img {
+  width: 100%;
+  object-fit: scale-down;
 }
 
 .name {
@@ -109,5 +121,53 @@
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+/* Media Queries */
+@media (max-width: 1840px) {
+  .homepage-content-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    translate: 0 -5%;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    width: 100%;
+  }
+
+  .homepage-content-container img {
+    width: 150%;
+    margin: auto 0;
+    translate: -18%;
+    margin-top: 2rem;
+  }
+
+  .capstone-video-container {
+    margin-top: 2rem;
+  }
+
+  .name {
+    translate: -18%;
+    width: 150%;
+    margin-bottom: 1rem;
+  }
+
+  .title {
+    translate: -18%;
+    width: 150%;
+  }
+}
+
+@media (max-width: 450px) {
+  .homepage-content-container {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .homepage-content-container {
+    font-size: 1rem;
+    margin-top: 3rem;
   }
 }

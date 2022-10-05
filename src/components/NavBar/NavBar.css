@@ -11,7 +11,7 @@
   justify-content: center;
   list-style: none;
   color: white;
-  font-size: 30px;
+  font-size: 2rem;
 }
 
 .navbar-item {
@@ -27,13 +27,51 @@
   cursor: pointer;
   color: #cea54c;
   border-radius: 7px;
-  font-size: 29px;
+  font-size: 1.9rem;
   transition: color 0.4s, font-size 0.2s;
 }
 
 .logo-img-container {
-  /* margin-top: 1rem; */
-
-  width: 150px;
+  height: 11rem;
   margin: auto;
+}
+
+@media (max-width: 1815px) {
+  .logo-img-container {
+    height: 7rem;
+  }
+  .navbar-list {
+    font-size: 1.5rem;
+  }
+
+  .navbar-list:hover {
+    font-size: 1.52rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .navbar-list {
+    translate: -5%;
+    font-size: 1.2rem;
+  }
+
+  .logo-img-container {
+    height: 5rem;
+    margin-top: -1rem;
+  }
+
+  .navbar-item:hover {
+    font-size: 1.19rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .navbar-list {
+    translate: -5%;
+    font-size: 1.1rem;
+  }
+
+  .navbar-item:hover {
+    font-size: 1rem;
+  }
 }

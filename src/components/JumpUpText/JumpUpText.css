@@ -1,6 +1,6 @@
 .effected-text {
   text-align: center;
-  font-size: 28px;
+  font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -18,4 +18,16 @@ span.fade {
   color: #cea54c;
   opacity: 1;
   transform: translateY(0px);
+}
+
+@media (max-width: 1815px) {
+  .effected-text {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .effected-text {
+    font-size: 1.2rem;
+  }
 }

@@ -26,7 +26,7 @@ const NavBar = () => {
         </ul>
       </div>
       <div className="logo-img-container">
-        <img src={logo} alt="logo" height="150px" />
+        <img src={logo} alt="logo" height="100%" />
       </div>
     </div>
   );
