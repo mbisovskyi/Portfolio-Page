@@ -9,4 +9,5 @@ body {
   background-position: center;
   background-position: fixed;
   background-size: contain;
+  overflow: hidden;
 }

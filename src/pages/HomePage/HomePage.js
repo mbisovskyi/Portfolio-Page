@@ -34,7 +34,7 @@ const HomePage = () => {
             </a>
           </div>
           <a
-            href="https://www.youtube.com/watch?v=QLBhWYlISgE&t=86s"
+            href="https://www.youtube.com/watch?v=QLBhWYlISgE&t=0s"
             target="blank"
           >
             <img className="black-hover" src={thumbnail} width="45%" />
@@ -43,20 +43,14 @@ const HomePage = () => {
         <div className="person-container">
           <div className="slide-left ">
             <div className="name">
-              <span
-                className="text30px-hover"
-                onClick={() => navigate("/about")}
-              >
+              <p className="text30px-hover" onClick={() => navigate("/about")}>
                 Mykola Bisovskyi
-              </span>
+              </p>
             </div>
             <div className="title">
-              <span
-                className="text30px-hover"
-                onClick={() => navigate("/about")}
-              >
+              <p className="text30px-hover" onClick={() => navigate("/about")}>
                 Full Stack Software Developer
-              </span>
+              </p>
             </div>
           </div>
           <img

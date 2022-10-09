@@ -7,15 +7,6 @@
   animation: slide-up ease 1.3s;
 }
 
-@keyframes slide-up {
-  0% {
-    transform: translateY(40rem);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
 .about-me-text-container p {
   font-family: "Kalam", cursive;
   text-align: justify;
@@ -54,7 +45,7 @@
 
 .modal-skills-container {
   width: 59%;
-  height: 47%;
+  height: 30rem;
   padding: 2% 2%;
   background-color: #313131;
   background: linear-gradient(0.4turn, #313131, #1b1b1b);
@@ -64,8 +55,8 @@
   display: none;
   position: absolute;
   left: 21%;
-  bottom: 7.7%;
-  overflow: auto;
+  top: 28rem;
+  overflow: hidden;
   z-index: 1;
   animation: slide-up-modal ease 0.5s;
 }
@@ -74,30 +65,13 @@
   animation: slide-down-modal ease 0.5s;
 }
 
-@keyframes slide-up-modal {
-  0% {
-    transform: translateY(30rem);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes slide-down-modal {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(46rem);
-  }
-}
-
 .skills-content {
   width: 100%;
+  height: 100%;
   margin: auto;
   background: linear-gradient(0.4turn, #494949, #2e2e2e);
   border-radius: 10px;
-  padding: 2% 8%;
+  padding: 4% 8%;
   box-shadow: 0 0 30px black;
 }
 
@@ -111,4 +85,31 @@
 .skills-span {
   margin-left: 0.5rem;
   color: aliceblue;
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(40rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up-modal {
+  0% {
+    transform: translateY(40rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
+
+@keyframes slide-down-modal {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(46rem);
+  }
 }

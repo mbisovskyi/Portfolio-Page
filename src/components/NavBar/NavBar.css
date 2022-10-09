@@ -4,31 +4,24 @@
 }
 
 .navbar-list {
-  width: 95%;
-  padding: 1rem;
-  margin: auto;
+  width: 60%;
+  margin: 2rem auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   list-style: none;
   color: white;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .navbar-item {
   text-align: center;
-  width: 6%;
-  height: 38px;
-  padding-bottom: 2rem;
-  margin: 1rem 2rem;
-  transition: color 1.5s, font-size 0.3s;
+  transition: color 1.5s;
 }
 
 .navbar-item:hover {
   cursor: pointer;
   color: #cea54c;
-  border-radius: 7px;
-  font-size: 1.9rem;
-  transition: color 0.4s, font-size 0.2s;
+  transition: color 0.4s;
 }
 
 .logo-img-container {
@@ -36,42 +29,52 @@
   margin: auto;
 }
 
-@media (max-width: 1815px) {
-  .logo-img-container {
-    height: 7rem;
+@media (min-width: 1201px) and (max-width: 1919px) {
+  .navbar-item {
+    text-align: center;
+    transition: color 1.5s;
   }
+
+  .navbar-item:hover {
+    cursor: pointer;
+    color: #cea54c;
+    transition: color 0.4s;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar-list {
+    width: 80%;
+    font-size: 2.5rem;
+  }
+
+  .logo-img-container {
+    height: 8rem;
+    margin: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .navbar-list {
+    width: 90%;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
   .navbar-list {
     font-size: 1.5rem;
   }
 
-  .navbar-list:hover {
-    font-size: 1.52rem;
-  }
-}
-
-@media (max-width: 450px) {
-  .navbar-list {
-    translate: -5%;
-    font-size: 1.2rem;
-  }
-
   .logo-img-container {
     height: 5rem;
-    margin-top: -1rem;
-  }
-
-  .navbar-item:hover {
-    font-size: 1.19rem;
+    margin: auto;
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 350px) {
   .navbar-list {
-    translate: -5%;
-    font-size: 1.1rem;
-  }
-
-  .navbar-item:hover {
-    font-size: 1rem;
+    font-size: 1.3rem;
+    width: 90%;
   }
 }

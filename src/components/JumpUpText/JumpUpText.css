@@ -1,6 +1,6 @@
 .effected-text {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -20,14 +20,26 @@ span.fade {
   transform: translateY(0px);
 }
 
-@media (max-width: 1815px) {
+@media (max-width: 1200px) {
   .effected-text {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 800px) {
+  .effected-text {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 500px) {
   .effected-text {
     font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .effected-text {
+    font-size: 1rem;
   }
 }
