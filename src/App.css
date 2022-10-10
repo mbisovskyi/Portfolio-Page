@@ -11,3 +11,11 @@ body {
   background-size: contain;
   overflow: hidden;
 }
+
+@media (max-width: 1840px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-bottom: 5rem;
+  }
+}
