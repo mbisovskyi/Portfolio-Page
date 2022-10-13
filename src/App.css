@@ -12,10 +12,17 @@ body {
   overflow: hidden;
 }
 
+@media (min-width: 1841px) and (max-width: 1920px) {
+  body {
+    overflow-y: auto;
+  }
+}
+
 @media (max-width: 1840px) {
   body {
     overflow-x: hidden;
     overflow-y: scroll;
     margin-bottom: 5rem;
+    background-size: cover;
   }
 }

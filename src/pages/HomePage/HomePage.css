@@ -126,9 +126,6 @@
 }
 
 /* Media Queries */
-@media (min-width: 1841px) {
-}
-
 @media (max-width: 1840px) {
   .homepage-content-container {
     display: flex;
@@ -145,6 +142,11 @@
 @media (max-width: 1600px) {
   .person-container img {
     width: 300px;
+  }
+
+  .capstone-video-container img {
+    width: 150%;
+    translate: -15%;
   }
 }
 
@@ -179,6 +181,7 @@
   .capstone-video-container,
   .person-container {
     font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
