@@ -11,7 +11,7 @@
   font-family: "Kalam", cursive;
   text-align: justify;
   color: white;
-  font-size: 22px;
+  font-size: 1.5rem;
   line-height: 1.7rem;
 }
 
@@ -45,8 +45,7 @@
 
 .modal-skills-container {
   width: 59%;
-  height: 30rem;
-  padding: 2% 2%;
+  padding: 2rem;
   background-color: #313131;
   background: linear-gradient(0.4turn, #313131, #1b1b1b);
   border-radius: 10px;
@@ -69,16 +68,16 @@
   width: 100%;
   height: 100%;
   margin: auto;
+  padding: 2rem;
   background: linear-gradient(0.4turn, #494949, #2e2e2e);
   border-radius: 10px;
-  padding: 4% 8%;
   box-shadow: 0 0 30px black;
 }
 
 .skills-paragraph {
   margin: 2.25rem 0;
   color: #cea54c;
-  font-size: 24px;
+  font-size: 1.6rem;
   line-height: 3rem;
 }
 
@@ -111,5 +110,92 @@
   }
   100% {
     transform: translateY(46rem);
+  }
+}
+
+@media (max-width: 1920px) {
+  .modal-skills-container {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 1600px) {
+  .skills-paragraph {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  .modal-skills-container {
+    margin-top: 1.2rem;
+    width: 80%;
+    translate: -15%;
+  }
+
+  .about-me-text-container {
+    width: 90%;
+  }
+}
+
+@media (min-width: 931px) and (max-width: 1200px) {
+  .modal-skills-container {
+    margin-top: -2rem;
+  }
+}
+
+@media (max-width: 930px) {
+  .skills-paragraph {
+    font-size: 1.4rem;
+  }
+
+  .modal-skills-container {
+    margin-top: -2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .about-me-text-container p {
+    font-size: 1.2rem;
+  }
+
+  .skills-content {
+    background: none;
+    box-shadow: none;
+    padding: 0 0.2rem;
+    overflow-y: auto;
+  }
+
+  .modal-skills-container {
+    padding: 1rem;
+    margin-top: -3rem;
+  }
+
+  .skills-paragraph {
+    margin: 0.2rem 0;
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-me-text-container p {
+    font-size: 1rem;
+  }
+
+  .skills-paragraph {
+    font-size: 1.2rem;
+  }
+
+  .modal-skills-container {
+    margin-top: -7.5rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .about-me-text-container p {
+    font-size: 0.8rem;
+  }
+
+  .skills-paragraph {
+    font-size: 1rem;
   }
 }

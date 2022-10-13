@@ -3,3 +3,30 @@
 769px — 1024px: Small screens, laptops.
 1025px — 1200px: Desktops, large screens.
 1201px and more — Extra large screens, TV.
+
+My breakpoints are:
+1. 1840px - 1920px
+2. 1600px
+3. 1300px
+4. 800px
+5. 500px
+6. 350px
+
+Media queries template:
+@media (min-width: 1841px) and (max-width: 1920px){
+}
+
+@media (max-width: 1600px) {
+}
+
+@media (max-width: 1300px) {
+}
+
+@media (max-width: 800px) {
+}
+
+@media (max-width: 500px) {
+}
+
+@media (max-width: 350px) {
+}
